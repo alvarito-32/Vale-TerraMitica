@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vale para ir a Terra Mítica</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,.32), transparent 35%),
+        linear-gradient(145deg, #2f1f52, #6d377c 50%, #f08a5d);
+      color: #fff8ef;
+    }
+    .decoration {
+      position: fixed;
+      font-size: 60px;
+      opacity: .34;
+      animation: float 5s ease-in-out infinite;
+    }
+    .d1 { top: 7%; left: 7%; }
+    .d2 { bottom: 8%; right: 8%; animation-delay: 1.3s; }
+    .d3 { top: 17%; right: 13%; animation-delay: 2.2s; }
+    @keyframes float { 50% { transform: translateY(-15px) rotate(8deg); } }
+    .card {
+      width: min(790px, 100%);
+      padding: 42px 26px;
+      border-radius: 34px;
+      text-align: center;
+      background: rgba(36, 24, 64, .88);
+      border: 1px solid rgba(255,255,255,.17);
+      box-shadow: 0 26px 70px rgba(0,0,0,.34);
+      position: relative;
+      z-index: 2;
+    }
+    .pill {
+      display: inline-block;
+      padding: 10px 17px;
+      margin-bottom: 18px;
+      border-radius: 999px;
+      background: rgba(255, 224, 153, .14);
+      border: 1px solid rgba(255, 224, 153, .24);
+      color: #ffe099;
+      font-weight: 800;
+    }
+    h1 {
+      color: #ffe099;
+      font-size: clamp(42px, 7vw, 74px);
+      line-height: 1.02;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      max-width: 650px;
+      margin: 20px auto 0;
+      color: #f7e8f1;
+      font-size: 19px;
+      line-height: 1.55;
+    }
+    .ticket {
+      max-width: 620px;
+      margin: 28px auto;
+      padding: 20px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.07);
+      border: 2px dashed rgba(255, 224, 153, .58);
+      color: #f8e9dc;
+      line-height: 1.6;
+    }
+    .ticket strong { color: #ffe099; }
+    a {
+      display: inline-block;
+      padding: 16px 28px;
+      border-radius: 999px;
+      color: #332050;
+      background: linear-gradient(135deg, #ffe099, #f6ad68);
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 17px;
+      box-shadow: 0 12px 24px rgba(0,0,0,.22);
+      transition: .2s ease;
+    }
+    a:hover { transform: translateY(-2px); }
+    .footer {
+      margin-top: 20px;
+      color: #ffe099;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <div class="decoration d1">🎢</div>
+  <div class="decoration d2">🏛️</div>
+  <div class="decoration d3">⚡</div>
+
+  <main class="card">
+    <div class="pill">🎁 Vale especial</div>
+    <h1>Vale para ir<br />a Terra Mítica</h1>
+    <p class="subtitle">
+      Una jornada de aventuras, gritos perfectamente justificables y decisiones cuestionables tomadas justo antes de subir a una atracción.
+    </p>
+    <section class="ticket">
+      <strong>Incluye:</strong> risas, fotos con cara de valentía discutible, pausas estratégicas para recuperar la dignidad y una dosis saludable de vértigo.
+    </section>
+    <a href="contrato-valentia.html">Canjear vale</a>
+    <div class="footer">Preparado con cariño y con muy poco miedo... en teoría ❤️</div>
+  </main>
+</body>
+</html>
